@@ -156,27 +156,123 @@ li {
 /* Services Section */
 
 .services {
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .service {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 1.5em;
 }
 
 .service-heading {
   font-family: Cinzel, serif;
-  margin-top: 1em;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
 .service-description {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  line-height: 1.5;
+  line-height: 1.8;
   text-align: center;
+  color: grey;
 }
+
+@media (min-width: 768px) {
+  .services {
+    flex-direction: row;
+  }
+
+  .service-description {
+    max-width: 350px;
+  }
+}
+
+/* End of services */
+
+
+/* Start of CTA section */
+.call-to-action {
+  background: rgb(243, 244, 246);
+  display: flex;
+  flex-direction: column;
+  padding: 6em 2em 1em 2em;
+}
+
+.cta-heading {
+  font-family: Cinzel, serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+.cta-description {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  color: grey;
+  line-height: 1.8;
+  margin: 2em 0;
+}
+
+.cta-btn {
+  border: none;
+  color: whitesmoke;
+  background-color: black;
+
+  text-transform: uppercase;
+  padding: 1.7em 2.3em;
+  margin-bottom: 4em;
+}
+
+
+.container-img {
+  background-image: url(./img/make-your-own-momentum-img.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 30em;
+}
+
+@media (min-width: 768px) {
+  .call-to-action {
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+@media (min-width: 769px) {
+  .cta-wrapper {
+    max-width: 768px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .call-to-action {
+    flex-direction: row;
+  }
+
+  .cta-wrapper {
+    display: flex;
+    max-width: 1200px;
+  }
+
+  .container-img {
+    width: 50%;
+  }
+
+  .container {
+    padding-right: 2em;
+    width: 50%;
+  }
+}
+
+
+
 
 
 
