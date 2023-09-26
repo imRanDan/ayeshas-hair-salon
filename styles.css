@@ -151,4 +151,34 @@ li {
 }
 
 
+/* End of Hero */
+
+/* Services Section */
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em;
+}
+
+.service-heading {
+  font-family: Cinzel, serif;
+  margin-top: 1em;
+}
+
+.service-description {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+
+
 
