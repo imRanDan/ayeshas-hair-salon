@@ -109,7 +109,6 @@ li {
     transition: 0.3s;
     border-top: 1px solid grey;
   }
-
 }
 
 /* End of Nav */
@@ -135,7 +134,15 @@ li {
   color: white;
 }
 
-.hero button {
+.hero-subheading {
+  display: none;
+  font-family: Cinzel, serif;
+  color: white;
+  font-weight: 300;
+}
+
+
+.hero-btn {
   color: whitesmoke;
   background-color: black;
   border: none;
@@ -144,9 +151,60 @@ li {
   text-transform: uppercase;
 }
 
+.hero-coupon {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.hero-coupon {
+  display: none;
+}
+
+
+
 @media (min-width: 768px) {
   .hero {
     height: 100vh;
+  }
+
+  .hero-subheading {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  
+  .hero-coupon {
+    font-family: Cinzel, serif;
+
+    color: white;
+    margin-top: 2em;
+    display: block;
+    background-color: black;
+    padding: 2em 1em;
+  }
+  
+  .hero-coupon-header {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  
+  .hero-coupon-text {
+    margin: 1.2em 0;
+    font-size: 1.5rem;
+    max-width: 270px;
+  }
+  
+  .hero-coupon-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 1em 2em;
+    text-transform: uppercase;
   }
 }
 
@@ -271,8 +329,41 @@ li {
   }
 }
 
+/* end of CTA */
 
+/* Our stylers  */
 
+.our-stylers {
+  font-family: Cinzel, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.our-stylers-heading {
+  padding: 2em 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.styler-name {
+  margin-top: 0.5em;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.styler-type {
+  margin: 0.5em 0 2em;
+  font-weight: 300;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+
+}
 
 
 
