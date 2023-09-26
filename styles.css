@@ -335,8 +335,6 @@ li {
 
 .our-stylers {
   font-family: Cinzel, serif;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -346,6 +344,15 @@ li {
   padding: 2em 0;
   font-size: 3rem;
   font-weight: 300;
+}
+
+.stylist-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.styler-img {
+  max-width: 100%;
 }
 
 .styler-name {
@@ -364,6 +371,21 @@ li {
 @media (min-width: 768px) {
 
 }
+
+@media (min-width: 1200px) {
+  .stylist-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .styler {
+    margin: 0 1em;
+  }
+}
+
+/* End of styler section */
+
+
 
 
 
