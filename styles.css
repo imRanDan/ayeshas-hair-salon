@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+h1 {
+  font-family: 'Cinzel', serif;
+}
+
 header {
   background: black;
 }
@@ -113,6 +117,38 @@ li {
 
 /* Hero Section */
 .hero {
-  
+    display: flex;
+    align-items: first baseline;
+    padding-left: 3em;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 35vh;
+    background-image: url(./img/ayesha-hairsalon-main.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+}
+
+.hero button {
+  color: whitesmoke;
+  background-color: black;
+  border: none;
+  margin-top: 2em;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+
 
