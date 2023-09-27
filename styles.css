@@ -385,7 +385,39 @@ li {
 
 /* End of styler section */
 
+/* coupon banner */
 
+.coupon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-banner {
+  background: grey url(./img/coupon-banner-bg-img.jpeg);
+  font-family: Cinzel, serif;
+
+  padding: 5em 0;
+}
+
+.coupon-banner-header {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.coupon-banner-subheader {
+  font-size: 2.5rem;
+  font-weight: 300;
+  max-width: 70vw;
+}
+
+.coupon-banner-btn {
+  padding: 1.5em 3em;
+  background: black;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
 
 
 
