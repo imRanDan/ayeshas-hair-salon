@@ -413,10 +413,59 @@ li {
 }
 
 .coupon-banner-btn {
-  padding: 1.5em 3em;
+  padding: 1.2em 2em;
   background: black;
   color: whitesmoke;
   text-transform: uppercase;
+}
+
+/* End of coupon banner */
+
+
+/* Start of lookbook */
+
+.our-lookbook-header {
+  text-align: center;
+}
+
+.tiles {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.our-lookbook-header {
+  font-family: Cinzel, serif;
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 1.5em 0;
+}
+
+.tileimg {
+  width: 100%;
+  margin: 0.2em;
+}
+
+@media (min-width: 768px) {
+  .tiles {
+    max-width: 800px;
+    line-height: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    border: 2px solid;
+    flex-direction: row;
+  }
+
+  .tile {
+    flex-basis: 200px;
+    flex-grow: 1;
+  }
+
+  .tile img {
+    width: 100%;
+  }
 }
 
 
