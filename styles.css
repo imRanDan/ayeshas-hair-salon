@@ -396,6 +396,8 @@ li {
 
 .coupon-banner {
   background: grey url(./img/coupon-banner-bg-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Cinzel, serif;
 
   padding: 5em 0;
@@ -424,6 +426,8 @@ li {
 
 /* Start of lookbook */
 
+/* Start of lookbook */
+
 .our-lookbook-header {
   text-align: center;
   font-family: Cinzel, serif;
@@ -434,51 +438,50 @@ li {
 
 .tiles {
   display: grid;
-  grid-template-columns: 1fr; /* For mobile: single column layout */
+  grid-template-columns: 1fr;
   gap: 0.2em;
+  padding: 2%; /* Added padding for framing */
 }
 
 .tile {
-  overflow: hidden; /* Hide any overflowing parts of the image */
+  overflow: hidden;
   position: relative;
-  padding-top: 100%;
+  padding-top: 100%; /* Ensures square tiles on mobile */
+  margin: 5%; /* Added margin for framing */
 }
 
 .tileimg {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.2s ease-in-out;
-  margin: 0;
 }
 
 .tile:hover .tileimg {
-  transform: scale(1.1); /* Optional hover effect to slightly enlarge images */
+  transform: scale(1.1);
 }
-
 
 @media (min-width: 768px) {
   .tiles {
     width: 66.66vw;
-    height: 66.66vw;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, 22vw); /* 3 columns */
+    grid-template-rows: 22vw 22vw; /* 2 rows */
+    grid-template-areas:
+      "small1 large1 small2"
+      "large2 small3 large3";
+    gap: 1vw;
     margin: 0 auto;
   }
 
-  .tile {
-    padding-top: 0;
-  }
+  /* Individual tile positioning */
+  .imgTileOne   { grid-area: small1; }
+  .imgTileTwo   { grid-area: large2; }
+  .imgTileThree { grid-area: large1; }
+  .imgTileFour  { grid-area: small3; }
+  .imgTileFive  { grid-area: small2; }
+  .imgTileSix   { grid-area: large3; }
 }
-
-
-
-
 
