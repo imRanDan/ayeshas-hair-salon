@@ -485,3 +485,16 @@ li {
   .imgTileSix   { grid-area: large3; }
 }
 
+/* end of gallery */
+
+/* start of last section */
+
+.last-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  
+}
+
