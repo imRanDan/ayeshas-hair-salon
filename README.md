@@ -6,7 +6,7 @@ A mobile-first responsive website that displays Ayesha's Hair Salon and their se
 ## How It's Made:
 I wanted to work on strengthing my responsive web design skills, and to keep the tech simple, I worked with HTML5 and CSS3. I used a mobile-first approach to design each section one at a time. 
 
-**Tech used:** HTML5 - CSS3
+**Tech used:** HTML5 - CSS3 - JavaScript
 
 ## Optimizations
 
