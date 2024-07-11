@@ -495,45 +495,69 @@ li {
   margin-top: 3em;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #111;
+  color: white;
+  padding: 2em;
+  gap: 2em;
 }
 
 .row {
-  margin: 1em;
-  color: white;
+  margin: 1em 0;
 }
 
-.row h4 {
-  font-family: Cinzel, serif;
-  font-size: 1.2rem;
-  font-weight: 300;
+.row-header {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
   border-bottom: 3px solid white;
-  width: 50%;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .row p {
   margin: 0.5em 0;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  line-height: 2;
+  line-height: 1.6;
   word-wrap: break-word;
 }
 
 .post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
   border-bottom: 1px solid white;
-  width: 50%;
+  padding-bottom: 1em;
+}
+
+.post img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+  background-color: #333; /* Placeholder color */
+}
+
+.post-details {
+  flex: 1;
+}
+
+.post-heading {
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .last-section {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .row {
-    width: 33.33vw;
+    flex: 1;
+    margin: 0 1em;
   }
 
-  .row p {
-
+  .post {
+    border-bottom: none;
   }
 }
 
