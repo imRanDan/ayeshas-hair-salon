@@ -43,6 +43,11 @@ li {
   padding: 0 1.5em;
 }
 
+.navbar a {
+
+  font-family: "Playfair Display", serif;
+}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -490,21 +495,27 @@ li {
 /* end of gallery */
 
 /* start of last section */
-
 .last-section {
   margin-top: 3em;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   background-color: #111;
   color: white;
   padding: 2em;
   gap: 2em;
+=======
+  background-color: #1A1A1A;
+  padding: 40px;
+  color: #F5F5F5;
+>>>>>>> 7c7b89a (updated footer and header font/styles)
 }
 
 .row {
   margin: 1em 0;
 }
 
+<<<<<<< HEAD
 .row-header {
   font-family: 'Cinzel', serif;
   font-size: 1.5rem;
@@ -517,10 +528,27 @@ li {
 .row p {
   margin: 0.5em 0;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+=======
+.row h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #EEE;
+  width: fit-content;
+}
+
+.row p {
+  margin: 0.3em 0;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1rem;
+>>>>>>> 7c7b89a (updated footer and header font/styles)
   line-height: 1.6;
   word-wrap: break-word;
 }
 
+<<<<<<< HEAD
 .post {
   display: flex;
   align-items: center;
@@ -545,6 +573,8 @@ li {
   margin: 0;
 }
 
+=======
+>>>>>>> 7c7b89a (updated footer and header font/styles)
 @media (min-width: 768px) {
   .last-section {
     flex-direction: row;
@@ -552,12 +582,17 @@ li {
   }
 
   .row {
+<<<<<<< HEAD
     flex: 1;
     margin: 0 1em;
   }
 
   .post {
     border-bottom: none;
+=======
+    width: 48%;
+    margin: 0;
+>>>>>>> 7c7b89a (updated footer and header font/styles)
   }
 }
 
